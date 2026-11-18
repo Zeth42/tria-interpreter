@@ -1,0 +1,12 @@
+// Archivo de prueba con errores léxicos para probar el reporte de fallos en TRIA
+
+var valor: int = 10 % 2; // Error: en TRIA el módulo es %%, no %
+
+var simboloInvalido: int = @50; // Error: el carácter @ no existe en TRIA
+
+var textoIncompleto: string = "Esta cadena no tiene comilla de cierre";
+
+var condicion: int = (10 > 5) & (2 < 4); // Error: el operador es &&, no &
+
+/// Comentario de bloque sin cerrar...
+var final: int = 100;

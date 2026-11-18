@@ -1,0 +1,44 @@
+// Código de demostración del lenguaje TRIA
+///
+  Este es un comentario multilínea
+  en bloque propio de TRIA
+///
+
+var cont: int = 64;
+const PI: numeric = 3.14159;
+const name: string = 'Luis';
+
+var numeros: int[] = [6, 3, 5, 8];
+
+var agenda: dict(int, string) = {
+    1: "Pepe",
+    2: "Jose"
+};
+
+fun Mean( [value1, value2]: numeric ) => numeric {
+    return (value1 * value2) / 2;
+}
+
+// Bucle condicional repeat
+var i: int = 0;
+repeat (i < 5) {
+    i++;
+}
+
+// Condicional ? y :
+?(cont %% 2 == 0 && cont > 0) {
+    write("Par positivo");
+} : ?(cont == 0) {
+    write("Cero");
+} : {
+    write("Impar");
+}
+
+// Bucle de colecciones
+foreach contacto in agenda {
+    write(contacto.key);
+    write(contacto);
+}
+
+write("Ingrese su edad: ");
+var edad: string = read();
